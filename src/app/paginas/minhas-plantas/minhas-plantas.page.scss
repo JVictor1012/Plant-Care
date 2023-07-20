@@ -1,0 +1,29 @@
+ion-title {
+    --color: #ffffff;
+  }
+
+ion-toolbar {
+    --background: #227345;
+}
+
+ion-menu-button {
+    --color: #ffffff;
+}
+
+.card{
+    position: sticky;
+    top:0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .centered-avatar {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+  }
