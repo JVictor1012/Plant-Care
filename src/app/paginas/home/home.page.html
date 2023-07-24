@@ -16,6 +16,8 @@
     <img alt="cinerarias" src="https://www.homeit.com.br/wp-content/uploads/2019/04/Ciner%C3%A1ria-1200x900.jpg">
     <ion-card-header>
       <ion-card-title>Cinerárias</ion-card-title>
+        <br>
+      <ion-button (click)="goToPlantas()">Detalhes</ion-button>
     </ion-card-header>
   </ion-card>
 
@@ -41,7 +43,7 @@
         </ion-col>
 
         <ion-col size="auto" class="ion-text-center">
-        <ion-button>
+        <ion-button (click)="goToOrientacoes()">
           <ion-icon name="newspaper-outline"></ion-icon>
         </ion-button>
         <br>
@@ -54,7 +56,7 @@
       <ion-row class="ion-justify-content-around">
 
         <ion-col size="auto" class="ion-text-center">
-          <ion-button>
+          <ion-button (click)="goToPlantas()">
             <ion-icon name="leaf-outline"></ion-icon>
           </ion-button>
           <br>

@@ -16,14 +16,31 @@ ion-menu-button {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin-right: 100px;
   }
   
   .centered-avatar {
     width: 200px;
     height: 200px;
-    margin-left: 100px;
+    margin-left: 80px;
+    margin-top: 10px;
   }
+
+.custom{
+  background-color: none;
+}
+
+.toggle{
+  margin-left: 200px;
+}
+
+.excluir-editar{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.button-item {
+  flex: 1;
+  margin: 0 5px;
+}
