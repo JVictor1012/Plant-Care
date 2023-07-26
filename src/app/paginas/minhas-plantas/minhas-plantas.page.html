@@ -20,7 +20,20 @@
 
 <br>
 
-<ion-toggle mode="ios" color="tertiary" class="toggle" justify="end">Notificações</ion-toggle><br /><br />
+<ion-toggle 
+  mode="ios" 
+  color="tertiary"
+  class="toggle" 
+  justify="end"
+  [(ngModel)]="notificacoesAtivadas" (ionChange)="ativarNotificacoes()">
+  
+    Notificações
+  </ion-toggle>
+  
+  
+   
+   
+   <br /><br />
 
 <div class="custom">
   <ion-item color="primary">
