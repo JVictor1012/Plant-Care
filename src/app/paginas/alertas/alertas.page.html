@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>Alertas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Alertas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Suas Plantas</ion-card-title>
+      <ion-card-subtitle>Gerencie seus Alertas!</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://www.homeit.com.br/wp-content/uploads/2019/04/Ciner%C3%A1ria-1200x900.jpg" />
+          </ion-thumbnail>
+          <ion-label>Cinerária</ion-label>
+            <ion-toggle 
+            mode="ios" 
+            color="tertiary"
+            class="toggle" 
+            justify="end"
+            [(ngModel)]="notificacoesCinas" (ionChange)="ativarNotificacoes('Cinerária')">
+            
+            </ion-toggle>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://cdn.leroymerlin.com.br/contents/tipos_de_suculenta_b266_original.jpg" />
+          </ion-thumbnail>
+          <ion-label>Suculenta</ion-label>
+            <ion-toggle 
+              mode="ios" 
+              color="tertiary"
+              class="toggle" 
+              justify="end"
+              [(ngModel)]="notificacoesSuculenta" (ionChange)="ativarNotificacoes('Suculenta')">
+              
+              </ion-toggle>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src= "https://folhicidade.com.br/wp-content/uploads/2021/01/IMG-20210114-WA0036-01.jpg"/>
+          </ion-thumbnail>
+          <ion-label>Samambaia</ion-label>
+          <ion-toggle 
+          mode="ios" 
+          color="tertiary"
+          class="toggle" 
+          justify="end"
+          [(ngModel)]="notificacoesSamambaia" (ionChange)="ativarNotificacoes('Samambaia')">
+          
+          </ion-toggle>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://cdn.awsli.com.br/600x450/163/163535/produto/157510471/49e186fe38.jpg" />
+          </ion-thumbnail>
+          <ion-label>Espada de São Jorge</ion-label>
+            <ion-toggle 
+            mode="ios" 
+            color="tertiary"
+            class="toggle" 
+            justify="end"
+            [(ngModel)]="notificacoesEspada" (ionChange)="ativarNotificacoes('Espada de São Jorge')">
+            
+            </ion-toggle>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

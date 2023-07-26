@@ -29,6 +29,14 @@ const routes: Routes = [
   },  {
     path: 'camera',
     loadChildren: () => import('./paginas/camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'alertas',
+    loadChildren: () => import('./paginas/alertas/alertas.module').then( m => m.AlertasPageModule)
+  },
+  {
+    path: 'configuracoes',
+    loadChildren: () => import('./paginas/configuracoes/configuracoes.module').then( m => m.ConfiguracoesPageModule)
   }
 
 ];

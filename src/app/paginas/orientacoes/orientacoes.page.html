@@ -1,14 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true" color="primary">
+  <ion-toolbar color="primary" >
     <ion-menu-button slot="start"></ion-menu-button>
     <ion-title>Orientações de Cultivo</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar color="primary" >
       <ion-title size="large">Orientações de Cultivo</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+   
+    <div class="banner">
+      <img src="https://www.homeit.com.br/wp-content/uploads/2019/04/Ciner%C3%A1ria-1200x900.jpg" alt="Planta" class="plant-image">
+    </div>
+
+    <ion-title>Cinerárias</ion-title>
+  
+    <!-- Tags com escritos -->
+    <ion-row class="tags">
+      <ion-col size="4">
+        <div class="tag">
+          <ion-icon name="water"></ion-icon>Pouca água
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="tag">
+          <ion-icon name="sunny"></ion-icon>Luminosidade média
+        </div>
+      </ion-col>
+    </ion-row>
+  
+    <ion-card>
+    <div class="explanation">
+      <p>
+        A cinerária tem um caule curto e ramificado. Suas folhas são alternas e orbiculares, pubescentes na parte superior do caule e tomentosas na parte inferior. 
+      </p>
+    </div>
+  </ion-card>
+  </ion-content>

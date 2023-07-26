@@ -9,6 +9,7 @@ import { NotificationService } from 'src/app/model/notification.service';
 export class MinhasPlantasPage {
 
   notificacoesAtivadas: boolean = false;
+  nome = "cineraria"
 
   constructor(private service : NotificationService) { 
     
@@ -17,10 +18,10 @@ export class MinhasPlantasPage {
   ativarNotificacoes() {
     if (this.notificacoesAtivadas) {
       // Ativar as notificações
-      this.service.scheduleNotification();
+      this.service.startnotifications(this.nome);
     } else {
       // Desativar as notificações
-      this.service.cancelAllNotifications();
+      this.service.stopnotifications();
     }
   }
 

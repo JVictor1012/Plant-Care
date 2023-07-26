@@ -27,6 +27,14 @@ export class HomePage implements OnInit {
     this.navCtrl.navigateForward('/camera')
   }
 
+  goToalertas(){
+    this.navCtrl.navigateForward('/alertas')
+  }
+
+  goToconfiguracoes(){
+    this.navCtrl.navigateForward('/configuracoes')
+  }
+
 
 
   //navigateMinhasPlantas(){
