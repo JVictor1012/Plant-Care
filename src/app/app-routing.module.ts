@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'folder/home',
     pathMatch: 'full'
   },
   {
@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'detalhes',
     loadChildren: () => import('./paginas/detalhes/detalhes.module').then( m => m.DetalhesPageModule)
+  },  {
+    path: 'camera',
+    loadChildren: () => import('./paginas/camera/camera.module').then( m => m.CameraPageModule)
   }
+
 ];
 
 @NgModule({

@@ -23,6 +23,10 @@ export class HomePage implements OnInit {
     this.navCtrl.navigateForward('/orientacoes');
   }
 
+  goToCamera(){
+    this.navCtrl.navigateForward('/camera')
+  }
+
 
 
   //navigateMinhasPlantas(){

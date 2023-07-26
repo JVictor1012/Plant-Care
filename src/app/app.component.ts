@@ -9,7 +9,7 @@ export class AppComponent {
     { title: 'Home', url: '/home', icon: 'Home' },
     { title: 'Orientações', url: '/orientacoes', icon: 'book' },
     { title: 'Minhas Plantas', url: '/minhas-plantas', icon: 'leaf' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Configurações', url: '/configuracoes', icon: 'cog' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
